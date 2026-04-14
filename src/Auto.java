@@ -10,7 +10,7 @@ class Auto extends Thread {
     public void run() {
         try {
             if (p.entra(id)) {
-                sleep((int)(Math.random() * 10000)); // max 10 sec
+                sleep((int)(Math.random() * 10) * 1000);
                 p.esci(id);
             }
         } catch (InterruptedException e) {}
